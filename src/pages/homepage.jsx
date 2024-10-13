@@ -6,20 +6,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faTwitter,
 	faGithub,
-	faStackOverflow,
+	faLinkedin,
 	faInstagram,
 } from "@fortawesome/free-brands-svg-icons";
 
 import Logo from "../components/common/logo";
-import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
-import Article from "../components/homepage/article";
-import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
 
 import INFO from "../data/user";
 import SEO from "../data/seo";
-import myArticles from "../data/articles";
 
 import "./styles/homepage.css";
 
@@ -125,7 +120,7 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.github}
+								href={"https://github.com/sara-altaf44"}
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -135,17 +130,17 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={INFO.socials.stackoverflow}
+								href={"https://www.linkedin.com/in/sara-altaf-a0076731b/"}
 								target="_blank"
 								rel="noreferrer"
 							>
 								<FontAwesomeIcon
-									icon={faStackOverflow}
-									className="homepage-social-icon"
+									icon={faLinkedin}
+							    className="homepage-social-icon"
 								/>
 							</a>
 							<a
-								href={INFO.socials.instagram}
+								href={"https://www.instagram.com/im_sarajutt/"}
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -155,7 +150,7 @@ const Homepage = () => {
 								/>
 							</a>
 							<a
-								href={`mailto:${INFO.main.email}`}
+								  href={`mailto:sarawaraich44@gmail.com`}
 								target="_blank"
 								rel="noreferrer"
 							>
@@ -166,36 +161,12 @@ const Homepage = () => {
 							</a>
 						</div>
 
-						<div className="homepage-projects">
-							<AllProjects />
-						</div>
+						
 
-						<div className="homepage-after-title">
-							<div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
-							</div>
 
-							<div className="homepage-works">
-								<Works />
-							</div>
-						</div>
 
-						<div className="page-footer">
-							<Footer />
-						</div>
+
+
 					</div>
 				</div>
 			</div>

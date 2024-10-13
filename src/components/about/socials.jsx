@@ -23,25 +23,25 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on Twitter</div>
+					<div className="social-text">Twitter</div>
 				</a>
 			</div>
 
 			<div className="social">
-				<a href={INFO.socials.github} target="_blank" rel="noreferrer">
+				<a href={"https://github.com/sara-altaf44"} target="_blank" rel="noreferrer">
 					<div className="social-icon">
 						<FontAwesomeIcon
 							icon={faGithub}
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on GitHub</div>
+					<div className="social-text">GitHub</div>
 				</a>
 			</div>
 
 			<div className="social">
 				<a
-					href={INFO.socials.linkedin}
+					href={"https://www.linkedin.com/in/sara-altaf-a0076731b/"}
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -51,13 +51,13 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on LinkedIn</div>
+					<div className="social-text">LinkedIn</div>
 				</a>
 			</div>
 
 			<div className="social">
 				<a
-					href={INFO.socials.instagram}
+					href={"https://www.instagram.com/im_sarajutt/"}
 					target="_blank"
 					rel="noreferrer"
 				>
@@ -67,14 +67,14 @@ const Socials = () => {
 							className="social-icon"
 						/>
 					</div>
-					<div className="social-text">Follow on Instagram</div>
+					<div className="social-text">Instagram</div>
 				</a>
 			</div>
 
 			<div className="email">
 				<div className="email-wrapper">
 					<a
-						href={`mailto:${INFO.main.email}`}
+						 href={`mailto:sarawaraich44@gmail.com`}
 						target="_blank"
 						rel="noreferrer"
 					>
